@@ -55,6 +55,9 @@ BOARD_USES_ALSA_AUDIO := true
 
 TARGET_USES_QCOM_MM_AUDIO := true
 
+# Build Hacks
+BUILD_BROKEN_DUP_RULES := true
+
 # Boot control
 SOONG_CONFIG_NAMESPACES += ufsbsg
 SOONG_CONFIG_ufsbsg += ufsframework
