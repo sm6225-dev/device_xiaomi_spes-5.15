@@ -92,6 +92,9 @@ blob_fixups: blob_fixups_user_type = {
         .fix_soname(),
     'vendor/bin/STFlashTool': blob_fixup()
         .add_needed('libbase_shim.so'),
+    ('vendor/etc/libnfc-nci.conf' ,'vendor/etc/libnfc-hal-st.conf'): blob_fixup()
+       .regex_replace('/data/nfc', '/data/vendor/nfc'),
+
 }  # fmt: skip
 
 module = ExtractUtilsModule(
