@@ -232,6 +232,9 @@ vendor.hw.fm.init=0
 # Fingerprint
 ro.hardware.fp.sideCap=true
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # Graphics
 graphics.gpu.profiler.support=true
 ro.hardware.egl=adreno
