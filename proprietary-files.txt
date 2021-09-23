@@ -1184,11 +1184,6 @@ vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libqtikeymint.so
 
-# Lights
-vendor/bin/hw/vendor.qti.hardware.lights.service
-vendor/etc/init/vendor.qti.hardware.lights.service.rc
-vendor/etc/vintf/manifest/vendor.qti.hardware.lights.service.xml
-
 # Media
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
