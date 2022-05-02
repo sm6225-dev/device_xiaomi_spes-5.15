@@ -1259,15 +1259,14 @@ vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
 
 # Mlipay
-odm/bin/mlipayd@1.1
-odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
-odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
-odm/lib64/libmlipay.so
-odm/lib64/libmlipay@1.1.so
-odm/lib64/libteeclientjni.so
-odm/lib64/libwvkeybox.so
-odm/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-odm/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
+odm/bin/mlipayd@1.1:vendor/bin/mlipayd@1.1
+odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
+odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml:vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
+odm/lib64/libmlipay.so:vendor/lib64/libmlipay.so
+odm/lib64/libmlipay@1.1.so:vendor/lib64/libmlipay@1.1.so
+odm/lib64/libteeclientjni.so:vendor/lib64/libteeclientjni.so
+odm/lib64/libwvkeybox.so:vendor/lib64/libwvkeybox.so
+odm/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 
 # Modem Firmware from miui_SPESNGlobal_OS1.0.11.0.TGKMIXM
 vendor/firmware_mnt/image/bd7tgl.bin|a80a9aed49babe5648799719e56e816fb2dd919b
