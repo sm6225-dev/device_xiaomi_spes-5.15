@@ -166,6 +166,7 @@ debug.sf.early.app.duration=16666666
 debug.sf.early.sf.duration=11111111
 debug.sf.earlyGl.app.duration=16666666
 debug.sf.earlyGl.sf.duration=11111111
+debug.sf.enable_transaction_tracing=false
 debug.sf.hw=0
 debug.sf.hwc.min.duration=5500000
 debug.sf.late.app.duration=11111111
