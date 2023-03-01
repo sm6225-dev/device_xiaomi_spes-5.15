@@ -27,6 +27,14 @@ on boot
     chmod 0664 /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
     chown system graphics /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
 
+    # Double Tap Sensor
+    chown system system /sys/bus/i2c/drivers/fts_ts/2-0038/double_tap_pressed
+    chmod 0660 /sys/bus/i2c/drivers/fts_ts/2-0038/double_tap_pressed
+
+    # Single Tap Sensor
+    chown system system sys/bus/i2c/drivers/fts_ts/2-0038/single_tap_pressed
+    chmod 0660 /sys/bus/i2c/drivers/fts_ts/2-0038/single_tap_pressed
+
 service vendor.goodix-events /vendor/bin/init.goodix.events.sh
     class late_start
     user root
