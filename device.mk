@@ -283,6 +283,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
+    init.goodix.events.sh \
     init.kernel.extra_free_kbytes.sh \
     init.kernel.post_boot-bengal.sh \
     init.kernel.post_boot.sh \
