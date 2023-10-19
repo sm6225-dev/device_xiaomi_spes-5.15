@@ -1,4 +1,5 @@
 type vendor_hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
+type fingerprint_vndservice, vndservice_manager_type;
 typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
 allow hal_fingerprint_default goodix_fingerprint_data_file:dir create_dir_perms;
