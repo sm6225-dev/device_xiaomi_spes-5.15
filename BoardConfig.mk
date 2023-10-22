@@ -53,17 +53,27 @@ TARGET_BOOTLOADER_BOARD_NAME := bengal
 # Display
 TARGET_SCREEN_DENSITY := 420
 
-# DTB
+# DTB/DTBO
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-
-# Init Boot
-BOARD_INIT_BOOT_HEADER_VERSION := 4
-BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_USES_DT := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Kernel
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_RAMDISK_USE_LZ4 := true
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
@@ -72,8 +82,44 @@ BOARD_BOOTCONFIG := \
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000
 
-BOARD_KERNEL_PAGESIZE := 4096
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
+# Kernel
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_VERSION := 5.15
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6225-5.15
+TARGET_KERNEL_CONFIG := \
+    gki_defconfig \
+    vendor/bengal_GKI.config \
+    vendor/spes_GKI.config
+KERNEL_LTO := none
+
+# Kernel (modules)
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm6225-modules
+TARGET_KERNEL_EXT_MODULES := \
+        qcom/opensource/mmrm-driver \
+        qcom/opensource/audio-kernel \
+        qcom/opensource/camera-kernel \
+        qcom/opensource/dataipa/drivers/platform/msm \
+        qcom/opensource/datarmnet/core \
+        qcom/opensource/datarmnet-ext/aps \
+        qcom/opensource/datarmnet-ext/offload \
+        qcom/opensource/datarmnet-ext/shs \
+        qcom/opensource/datarmnet-ext/perf \
+        qcom/opensource/datarmnet-ext/perf_tether \
+        qcom/opensource/datarmnet-ext/sch \
+        qcom/opensource/datarmnet-ext/wlan \
+        qcom/opensource/display-drivers/msm \
+        qcom/opensource/video-driver \
+        qcom/opensource/graphics-kernel \
+        qcom/opensource/touch-drivers \
+        qcom/opensource/wlan/platform \
+        qcom/opensource/wlan/qcacld-3.0 \
+        qcom/opensource/bt-kernel
+
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/configs/modules/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/modules/modules.load.vendor_dlkm))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/modules/modules.load.first_stage))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD  := $(strip $(shell cat $(DEVICE_PATH)/configs/modules/modules.load.recovery))
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
