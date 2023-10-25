@@ -109,6 +109,7 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := bengal
+TARGET_BOARD_SUFFIX := _515
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
