@@ -159,7 +159,6 @@ drm.service.enabled=true
 # Display
 debug.egl.hw=0
 debug.mdpcomp.logs=0
-debug.sf.enable_hwc_vds=0
 debug.sf.early.app.duration=16666666
 debug.sf.early.sf.duration=11111111
 debug.sf.earlyGl.app.duration=16666666
