@@ -122,7 +122,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/hw/audio.primary.bengal.so
-vendor/lib/hw/audio.usb.bengal.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libadm.so
 vendor/lib/libalsautils.so
