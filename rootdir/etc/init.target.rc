@@ -222,10 +222,6 @@ on property:init.svc.surfaceflinger=running
 on property:init.svc.surfaceflinger=restarting
     stop displayfeature
     # display end
-
-on property:ro.boot.multisim_config=*
-    setprop persist.radio.multisim.config ${ro.boot.multisim_config}
-
     # add for wifi 9434 log
 service vendor.tcpdump /vendor/bin/vendor_tcpdump -i any -W 2 -C 2 -s 134 -w /data/vendor/wlan_logs/tcpdump.pcap
     class main
