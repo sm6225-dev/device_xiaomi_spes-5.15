@@ -31,7 +31,7 @@
 /dev/goodix_fp                                                                                                  u:object_r:fingerprint_device:s0
 
 # Fingerprint HAL
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service.xiaomi                                   u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi                       u:object_r:hal_fingerprint_default_exec:s0
 
 # Fingerprint init script
 /vendor/bin/init\.fingerprint\.sh                                                                               u:object_r:vendor_fingerprint_sh_exec:s0
