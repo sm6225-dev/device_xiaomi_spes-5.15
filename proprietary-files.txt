@@ -82,7 +82,6 @@ vendor/lib/libsndcardparser.so
 -vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/hw/audio.primary.bengal.so
-vendor/lib64/hw/audio.usb.bengal.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libshoebox.so
@@ -102,9 +101,7 @@ vendor/lib64/libmcs.so
 vendor/lib64/liboffloadhal.so
 vendor/lib64/libqtigefar.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
-vendor/lib64/libqti_vndfwk_detect_vendor.so
 vendor/lib64/libsndcardparser.so
-vendor/lib64/libwfdaac_vendor.so
 -vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
