@@ -1260,23 +1260,14 @@ vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
 
 # Mlipay
 odm/bin/mlipayd@1.1
-odm/bin/mtd@1.3
 odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
-odm/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc
 odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
-odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
 odm/lib64/libmlipay.so
 odm/lib64/libmlipay@1.1.so
-odm/lib64/libmt@1.3.so
 odm/lib64/libteeclientjni.so
 odm/lib64/libwvkeybox.so
 odm/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 odm/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
-odm/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
-odm/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
-odm/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
-odm/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so
-vendor/lib64/libmisight.so
 
 # Modem Firmware from miui_SPESNGlobal_OS1.0.11.0.TGKMIXM
 vendor/firmware_mnt/image/bd7tgl.bin|a80a9aed49babe5648799719e56e816fb2dd919b
@@ -2310,6 +2301,7 @@ vendor/lib64/libstreamparser.so
 # VPP
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib64/libmisight.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 
