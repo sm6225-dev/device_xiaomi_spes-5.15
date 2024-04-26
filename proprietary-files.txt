@@ -5,8 +5,6 @@
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
@@ -119,24 +117,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 # Audio
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
-vendor/lib/hw/audio.primary.bengal.so
-vendor/lib/btaudio_offload_if.so
-vendor/lib/libadm.so
-vendor/lib/libalsautils.so
-vendor/lib/libar-acdb.so
-vendor/lib/libar-gpr.so
-vendor/lib/libar-gsl.so
-vendor/lib/libar-pal.so
-vendor/lib/libats.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/liblx-ar_util.so
-vendor/lib/liblx-osal.so
-vendor/lib/libmcs.so
-vendor/lib/libpalclient.so
-vendor/lib/libqtigefar.so
-vendor/lib/libqti_vndfwk_detect_vendor.so
-vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
-vendor/lib/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/hw/audio.primary.bengal.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libadm.so
@@ -164,23 +144,13 @@ vendor/bin/agmcap
 vendor/bin/agmcompressplay
 vendor/bin/agmhostless
 vendor/bin/agmplay
-vendor/lib/libagm.so
-vendor/lib/libagmmixer.so
-vendor/lib/libagmclient.so
-vendor/lib/libagm_compress_plugin.so
-vendor/lib/libagm_mixer_plugin.so
-vendor/lib/libagm_pcm_plugin.so
-vendor/lib/libcapiv2svacnnvendor.so
-vendor/lib/libcapiv2svarnnvendor.so
-vendor/lib/libcapiv2uvvendor.so
-vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
-vendor/lib/vendor.qti.hardware.AGMIPC@1.0.so
 vendor/lib64/libagm.so
 vendor/lib64/libagmclient.so
 vendor/lib64/libagmmixer.so
 vendor/lib64/libagm_compress_plugin.so
 vendor/lib64/libagm_mixer_plugin.so
 vendor/lib64/libagm_pcm_plugin.so
+vendor/lib64/libsndcardparser.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
@@ -188,7 +158,6 @@ vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 
 # Audio SoundFX
-vendor/lib/soundfx/libasphere.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libmisoundfx.so
 
@@ -530,15 +499,11 @@ vendor/lib64/libmmcamera_faceproc2.so|20c36bb50f34e407863d6c0ede174aeff87acd32
 vendor/lib64/libmmcamera_lscv35.so|44560c24c5f7ad8d82338be2f8ee250cdfeddb61
 vendor/lib64/libmmcamera_mfnr.so|c308ae487c3b54f1874a59517c1247db6d0ca9fd
 vendor/lib64/libmmcamera_mfnr_t4.so|d8eeef7b26f37f6802e17239225a67e05c977fc4
+vendor/lib64/libmm-color-convertor.so|062e01ed0d8007a31047b5e2070b57e8565494e6
 
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
-vendor/lib/libcdfw.so
-vendor/lib/libcdfw_remote_api.so
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libmdsprpc.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
@@ -780,8 +745,6 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 # DSP
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/lib/libsdsprpc.so
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
@@ -868,6 +831,7 @@ vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libmifpext.so
 vendor/lib64/libqfp-service.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Fingerprint Firmware from topaz_miui_TOPAZGlobal_OS1.0.4.0.UMGMIXM
 vendor/firmware_mnt/image/fpctzapp.b00|e65fb1aba172c85c1a31100e8776d81750535e9b
@@ -938,7 +902,6 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
-vendor/bin/garden_app
 vendor/bin/loadalgo
 vendor/bin/loc_launcher
 vendor/bin/lowi-server;DISABLE_CHECKELF
@@ -977,7 +940,6 @@ vendor/lib64/libasn1crtx.so
 vendor/lib64/libbatching.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libengineplugin.so
-vendor/lib64/libgarden.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libgeofencing.so
 vendor/lib64/libgnss.so
@@ -1021,26 +983,8 @@ vendor/lib64/vendor.qti.gnss-service.so
 
 # Graphics
 vendor/gpu/kbc/sequence_manifest.bin
-vendor/gpu/kbc/unified_kbcs_32.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
 vendor/gpu/kbc/unified_ksqs.bin
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
-vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so
-vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libadreno_app_profiles.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libgsl.so
-vendor/lib/libkcl.so
-vendor/lib/libkernelmanager.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libllvm-qgl.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
@@ -1176,10 +1120,6 @@ vendor/lib64/libqtikeymaster4.so|82b633556e09bbab11e74148fd09b88010f2484e
 vendor/lib64/libqcbor.so
 
 # Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib/libmmrtpdecoder.so
-system_ext/lib/libmmrtpencoder.so
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 system_ext/lib64/libmmrtpdecoder.so
@@ -1191,30 +1131,6 @@ vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/media_khaje_v0/video_system_specs.json
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
-vendor/lib/libEvrcSwCodec.so
-vendor/lib/libQcelp13SwCodec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib/libmediautils_vendor.so
-vendor/lib/libqc2audio_base.so
-vendor/lib/libqc2audio_basecodec.so
-vendor/lib/libqc2audio_core.so
-vendor/lib/libqc2audio_hooks.so
-vendor/lib/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
-vendor/lib/libqc2audio_platform.so
-vendor/lib/libqc2audio_swaudiocodec.so
-vendor/lib/libqc2audio_utils.so
-vendor/lib/libqc2colorconvertfilter.so
-vendor/lib/libqc2filter.so
-vendor/lib/libqcodec2_base.so
-vendor/lib/libqcodec2_basecodec.so
-vendor/lib/libqcodec2_core.so
-vendor/lib/libqcodec2_filterbase.so
-vendor/lib/libqcodec2_hooks.so
-vendor/lib/libqcodec2_mockfilter.so
-vendor/lib/libqcodec2_mockqc2filter.so
-vendor/lib/libqcodec2_platform.so
-vendor/lib/libqcodec2_utils.so
-vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libEvrcSwCodec.so
 vendor/lib64/libQcelp13SwCodec.so
 vendor/lib64/libdsd2pcm.so
@@ -1245,7 +1161,6 @@ vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libvideotxr.so
 
 # Memory
-vendor/lib/libvmmem.so
 vendor/lib64/libvmmem.so
 
 # Memtrack
@@ -1871,8 +1786,6 @@ vendor/lib64/libqmiservices.so
 # QSPM
 vendor/bin/vendor.qti.qspmhal@1.0-service
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
-vendor/lib/vendor.qti.qspmhal@1.0-impl.so
-vendor/lib/vendor.qti.qspmhal@1.0.so
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 
@@ -2186,18 +2099,9 @@ vendor/lib64/libnotifyaudiohal.so|dacd0783b6b06c2ccb60510bf62d8cb16e42dcdd
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
-vendor/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # Snapdragon Computer Vision Engine from miui_SPESNGlobal_V14.0.6.0.TGKMIXM
-vendor/lib/libfastcvopt.so|eb6e1052f12b45f2f651f1437e6072459648f2f3
-vendor/lib/libfastcvdsp_stub.so|7f27cee24281bc9bf4f08c6100cc66bd650d8efb
-vendor/lib/libscveCommon.so|4be56b846f71f4ba8032471abf9f02dc5b01810c
-vendor/lib/libscveCommon_stub.so|89e1a3d3302b6809ae4ca1d80f6c2e0cd3c3b752
-vendor/lib/libscveObjectSegmentation.so|b60b43377262ef6cc7882ff5cc49d35e4c516670
-vendor/lib/libscveObjectSegmentation_stub.so|f1a139933c16c2fde367506fe0419c15684a2d3c
-vendor/lib/libscveObjectTracker.so|26318c862d3d56596fe7208ebcc3ae1900f7d55f
-vendor/lib/libscveObjectTracker_stub.so|cafdeed8fa0d51672806038065cf4ce38d442b6b
 vendor/lib64/libfastcvopt.so|50e44fd080fc1edbf5006ef08eb31e4269df6006
 vendor/lib64/libfastcvdsp_stub.so|672d68350643486989b287edb9ce1dae82ed4dc2
 vendor/lib64/libscveCommon.so|237b6432dfb9d7b6ac5d5522591db0972755bb5b
@@ -2219,7 +2123,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
-vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
 
 # Thermal
@@ -2273,18 +2176,15 @@ vendor/lib64/libtrustedapploader.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # UWB
-vendor/lib/libstreamparser.so
 vendor/lib64/libstreamparser.so
+vendor/lib64/libvideoutils.so
 
 # VPP
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/libmisight.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 
 # Vulkan
-vendor/lib/hw/vulkan.adreno.so
 vendor/lib64/hw/vulkan.adreno.so
 
 # Wi-Fi
