@@ -35,6 +35,10 @@ on boot
     chown system system sys/bus/i2c/drivers/fts_ts/2-0038/single_tap_pressed
     chmod 0660 /sys/bus/i2c/drivers/fts_ts/2-0038/single_tap_pressed
 
+on property:vendor.post_boot.parsed=1
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 service vendor.goodix-events /vendor/bin/init.goodix.events.sh
     class late_start
     user root
