@@ -54,6 +54,8 @@ function lib_to_package_fixup_vendor_variants() {
             vendor.qti.imsrtpservice@3.1)
             echo "$1_vendor"
             ;;
+            libagmclient | \
+            libpalclient) ;;
         *)
             return 1
             ;;
