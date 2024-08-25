@@ -127,17 +127,17 @@ vendor/lib/libadm.so
 vendor/lib/libalsautils.so
 vendor/lib/libar-acdb.so
 vendor/lib/libar-gpr.so
--vendor/lib/libar-gsl.so
--vendor/lib/libar-pal.so
+vendor/lib/libar-gsl.so
+vendor/lib/libar-pal.so
 vendor/lib/libats.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/liblx-ar_util.so
--vendor/lib/liblx-osal.so
+vendor/lib/liblx-osal.so
 vendor/lib/libmcs.so
 vendor/lib/libpalclient.so
 vendor/lib/libqtigefar.so
 vendor/lib/libqti_vndfwk_detect_vendor.so
--vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/hw/audio.primary.bengal.so
 vendor/lib64/btaudio_offload_if.so
@@ -145,16 +145,16 @@ vendor/lib64/libadm.so
 vendor/lib64/libalsautils.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
--vendor/lib64/libar-gsl.so
--vendor/lib64/libar-pal.so
+vendor/lib64/libar-gsl.so
+vendor/lib64/libar-pal.so
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/liblx-ar_util.so
--vendor/lib64/liblx-osal.so
+vendor/lib64/liblx-osal.so
 vendor/lib64/libmcs.so
 vendor/lib64/libpalclient.so
 vendor/lib64/libqtigefar.so
--vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.pal@1.0.so
 
 # Audio Configs
@@ -166,7 +166,7 @@ vendor/bin/agmcap
 vendor/bin/agmcompressplay
 vendor/bin/agmhostless
 vendor/bin/agmplay
--vendor/lib/libagm.so
+vendor/lib/libagm.so
 vendor/lib/libagmmixer.so
 vendor/lib/libagmclient.so
 vendor/lib/libagm_compress_plugin.so
@@ -175,9 +175,9 @@ vendor/lib/libagm_pcm_plugin.so
 vendor/lib/libcapiv2svacnnvendor.so
 vendor/lib/libcapiv2svarnnvendor.so
 vendor/lib/libcapiv2uvvendor.so
--vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
 vendor/lib/vendor.qti.hardware.AGMIPC@1.0.so
--vendor/lib64/libagm.so
+vendor/lib64/libagm.so
 vendor/lib64/libagmclient.so
 vendor/lib64/libagmmixer.so
 vendor/lib64/libagm_compress_plugin.so
@@ -186,7 +186,7 @@ vendor/lib64/libagm_pcm_plugin.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
--vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
 
 # Audio SoundFX
@@ -2261,8 +2261,8 @@ vendor/etc/thermal-video.conf
 vendor/etc/thermal-videochat.conf
 vendor/etc/thermald-devices.conf
 vendor/etc/tzlog.dict
--vendor/lib64/liblmthermallistner.so
--vendor/lib64/libthermalclient.so
+vendor/lib64/liblmthermallistner.so
+vendor/lib64/libthermalclient.so
 
 # Time
 vendor/app/TimeService/TimeService.apk
