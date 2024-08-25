@@ -70,6 +70,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        system_ext/lib*/libwfdservice.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
+            ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
             [ "$2" = "" ] && return 0
             "${SIGSCAN}" -p "13 0A 00 94" -P "1F 20 03 D5" -f "${2}"
