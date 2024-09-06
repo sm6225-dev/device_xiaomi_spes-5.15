@@ -100,6 +100,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${SIGSCAN}" -p "FF 03 01 D1 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9" -P "C0 03 5F D6 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9" -f "${2}"
             ;;
+        vendor/lib64/vendor.libdpmframework.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libhidlbase_shim.so" "${2}" || ${PATCHELF} --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
         *)
             return 1
             ;;
