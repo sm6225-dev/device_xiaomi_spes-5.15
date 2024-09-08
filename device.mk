@@ -407,17 +407,10 @@ $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
-    libavservices_minijail \
-    libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libpalclient \
-    libplatformconfig
-
-# Media stagefright
-PRODUCT_PACKAGES += \
-    libstagefrighthw
+    libpalclient
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -455,11 +448,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_k7tn/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_k7tn/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_k7tn/android.hardware.se.omapi.uicc.xml
-
-# OMX
-PRODUCT_PACKAGES += \
-    libmm-omxcore \
-    libOmxCore
 
 # Overlays
 PRODUCT_PACKAGES += \
