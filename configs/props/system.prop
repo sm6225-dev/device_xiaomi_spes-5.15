@@ -1,3 +1,10 @@
+# Camera
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera
+ro.com.google.lens.oem_camera_package=com.android.camera
+ro.hardware.camera=xiaomi
+ro.miui.notch=1
+vendor.camera.aux.packagelist=org.lineageos.aperture,org.codeaurora.snapcam,com.android.camera,com.google.camera
+
 # CNE
 persist.vendor.cne.feature=1
 
@@ -49,6 +56,7 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
+ro.media.recorder-max-base-layer-fps=60
 
 # NFC
 ro.nfc.port=I2C
