@@ -319,5 +319,8 @@ vendor.usb.use_gadget_hal=1
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
 
+# Wi-Fi Display
+vendor.wfdservice64=enable
+
 # Zygote
 zygote.critical_window.minute=10
