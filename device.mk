@@ -460,6 +460,7 @@ PRODUCT_PACKAGES += \
     DeviceAsWebcamOverlaySpes \
     CarrierConfigResCommon \
     LineageSDKOverlaySpes \
+    NcmTetheringOverlay \
     FrameworksResCommon \
     FrameworksResTarget \
     FrameworksResSpes \
