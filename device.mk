@@ -415,6 +415,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 # Mountpoints
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
