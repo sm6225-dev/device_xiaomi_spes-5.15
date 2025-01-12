@@ -225,9 +225,6 @@ sys.displayfeature_hidl=true
 # FM
 vendor.hw.fm.init=0
 
-# FRP
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # Fingerprint
 ro.hardware.fp.sideCap=true
 
