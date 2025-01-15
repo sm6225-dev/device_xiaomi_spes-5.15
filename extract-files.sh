@@ -104,6 +104,14 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "libhidlbase_shim.so" "${2}" || ${PATCHELF} --add-needed "libhidlbase_shim.so" "${2}"
             ;;
+        vendor/bin/hw/vendor.qti.hardware.display.composer-service        |\
+        vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service   |\
+        vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so |\
+        vendor/lib64/libdisplayfeatureservice.so                          |\
+        vendor/lib64/libsdmcore.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "vendor.xiaomi.hardware.displayfeature@1.0.so" "libvendor.xiaomi.hardware.displayfeature@1.0.so" "${2}"
+            ;;
         *)
             return 1
             ;;
