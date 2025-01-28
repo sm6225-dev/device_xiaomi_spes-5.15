@@ -807,6 +807,9 @@ vendor/firmware/a630_sqe.fw
 vendor/firmware/Conf_MultipleTest.ini|39e9c063d3130d085995dc874dae263e4b501188
 vendor/firmware/focaltech_ts_fw_samsung.bin|8bfa360b217508c18a054e52b5195a144b0469a9
 
+# Firmware video - xun-t-oss
+vendor/firmware/venus.mbn|f17d9ca4aa682d547fdc7ccb2c8dc3c17350233b
+
 # FM
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
