@@ -93,7 +93,6 @@ HWUI_COMPILE_FOR_PERF := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_spes
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_spes
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
