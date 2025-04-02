@@ -10,6 +10,47 @@ vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
+# Adsp Firmware
+vendor/firmware_mnt/image/adsp.b00
+vendor/firmware_mnt/image/adsp.b01
+vendor/firmware_mnt/image/adsp.b02
+vendor/firmware_mnt/image/adsp.b03
+vendor/firmware_mnt/image/adsp.b04
+vendor/firmware_mnt/image/adsp.b05
+vendor/firmware_mnt/image/adsp.b06
+vendor/firmware_mnt/image/adsp.b07
+vendor/firmware_mnt/image/adsp.b08
+vendor/firmware_mnt/image/adsp.b09
+vendor/firmware_mnt/image/adsp.b10
+vendor/firmware_mnt/image/adsp.b12
+vendor/firmware_mnt/image/adsp.b13
+vendor/firmware_mnt/image/adsp.b14
+vendor/firmware_mnt/image/adsp.b15
+vendor/firmware_mnt/image/adsp.b16
+vendor/firmware_mnt/image/adsp.b17
+vendor/firmware_mnt/image/adsp.b18
+vendor/firmware_mnt/image/adsp.b19
+vendor/firmware_mnt/image/adsp.b20
+vendor/firmware_mnt/image/adsp.b21
+vendor/firmware_mnt/image/adsp.b22
+vendor/firmware_mnt/image/adsp.b23
+vendor/firmware_mnt/image/adsp.b24
+vendor/firmware_mnt/image/adsp.b25
+vendor/firmware_mnt/image/adsp.b26
+vendor/firmware_mnt/image/adsp.b27
+vendor/firmware_mnt/image/adsp.b28
+vendor/firmware_mnt/image/adsp.b29
+vendor/firmware_mnt/image/adsp.b30
+vendor/firmware_mnt/image/adsp.b31
+vendor/firmware_mnt/image/adsp.b32
+vendor/firmware_mnt/image/adsp.b33
+vendor/firmware_mnt/image/adsp.b34
+vendor/firmware_mnt/image/adsp.b35
+vendor/firmware_mnt/image/adsp.mdt
+vendor/firmware_mnt/image/adspr.jsn
+vendor/firmware_mnt/image/adsps.jsn
+vendor/firmware_mnt/image/adspua.jsn
+
 # ADSP Module
 vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
 vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so
