@@ -102,6 +102,10 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd|92885cb
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd|b761b7b9d0b2e782ec557b0c333cc3efa924db4f
 vendor/etc/acdbdata/adsp_avs_config.acdb|c84e803f04af9b2d4cd7aade1e8e7a55cfecabc3
 
+# ACDB
+vendor/etc/acdbdata/bengal_idp/IDP_acdb_cal.acdb
+vendor/etc/acdbdata/bengal_idp/IDP_workspaceFileXml.qwsp
+
 # Alarm
 product/app/PowerOffAlarm/PowerOffAlarm.apk
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
