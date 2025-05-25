@@ -1364,7 +1364,9 @@ vendor/etc/sensor_diag.cfg|ad39511c15df2a2279ddbb4f056071704b9ec891
 # Sensors elliptic from miui_SPESNGlobal_V14.0.6.0.TGKMIXM
 vendor/etc/elliptic_sensor.xml|2a38626bb26d9def04d2a34167440c2ee1a41bc1
 #vendor/lib64/hw/sensors.elliptic@2.0.so|c19dfafbb3fb4ae8372c8b57fb02d08af5f98c50
-vendor/lib64/libnotifyaudiohal.so;FIX_SONAME|2c336d7782585e899374fc6948bf49bda8575044
+
+# Sensors elliptic - from ruby-user 14 UP1A.231005.007 V816.0.5.0.UMOMIXM release-keys
+vendor/lib64/libnotifyaudiohal.so|8dbb23b6069f81a0420e0d0b59e397c90fbe58e5
 
 # Servicetracker
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
