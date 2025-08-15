@@ -43,7 +43,6 @@ pinctrl-msm.ko
 pinctrl-bengal.ko
 qnoc-bengal.ko
 qnoc-qos-rpm.ko
-ns.ko
 nvmem_qfprom.ko
 nvmem_qcom-spmi-sdam.ko
 phy-qcom-ufs.ko

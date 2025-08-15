@@ -233,7 +233,6 @@ stm_ftrace.ko
 snd-usb-audio-qmi.ko
 cfg80211.ko
 qrtr.ko
-ns.ko
 qrtr-smd.ko
 msm_drm.ko
 focaltech_fts_i2c.ko
