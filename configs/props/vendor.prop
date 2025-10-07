@@ -301,6 +301,7 @@ persist.vendor.sensors.support_direct_channel=false
 
 # USB
 ro.usb.uvc.enabled=true
+ro.usb.uvc.disable_video_encode_flag=true
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss_sw
