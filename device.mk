@@ -77,6 +77,7 @@ PRODUCT_PACKAGES += \
 AUDIO_HAL_DIR := hardware/qcom-caf/sm6225/audio/primary-hal
 
 $(call soong_config_set, android_hardware_audio, run_64bit, true)
+$(call soong_config_set, android_hardware_audio, skip_speaker_layout_channel_mask_field, true)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
