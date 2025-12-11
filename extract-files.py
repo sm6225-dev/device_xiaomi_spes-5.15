@@ -70,6 +70,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .strip_debug_sections()
         .add_needed('libcamxmmaphook.so'),
+    'vendor/lib64/libdpps.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2_1.so'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
     'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
