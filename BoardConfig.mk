@@ -61,11 +61,6 @@ TARGET_USES_QCOM_MM_AUDIO := true
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-# Boot control
-SOONG_CONFIG_NAMESPACES += ufsbsg
-SOONG_CONFIG_ufsbsg += ufsframework
-SOONG_CONFIG_ufsbsg_ufsframework := bsg
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := bengal
 
