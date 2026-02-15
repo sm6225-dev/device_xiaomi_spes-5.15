@@ -42,6 +42,9 @@ bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=false
 
+# Graphics
+ro.hwui.render_ahead=20
+
 # LMKD
 ro.lmk.kill_heaviest_task=true
 ro.lmk.swap_util_max=90
