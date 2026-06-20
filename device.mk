@@ -358,6 +358,20 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libOmxCore
 
+# Overlays
+PRODUCT_PACKAGES += \
+    ApertureOverlaySpes \
+    CarrierConfigResCommon \
+    LineageSDKOverlaySpes \
+    FrameworksResCommon \
+    FrameworksResTarget \
+    FrameworksResSpes \
+    SystemUIResCommon \
+    TelecommResCommon \
+    TelephonyResCommon \
+    WifiResCommon \
+    WifiResTarget
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
