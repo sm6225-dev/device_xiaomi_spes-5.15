@@ -1175,8 +1175,6 @@ vendor/etc/init/vendor.qti.hardware.lights.service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.lights.service.xml
 
 # Listen
-vendor/etc/vintf/manifest/manifest_non_qmaa.xml
-vendor/etc/vintf/manifest/manifest_non_qmaa_extn.xml
 vendor/lib/hw/sound_trigger.primary.bengal.so
 vendor/lib/libcapiv2svacnnvendor.so
 vendor/lib/libcapiv2svarnnvendor.so
