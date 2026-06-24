@@ -2361,6 +2361,12 @@
         <ctl name="BCS Channel" value="CH10" />
     </path>
 
+    <path name="ultrasound-mic">
+        <ctl name="TX_CDC_DMA_TX_4 Channels" value="One" />
+        <ctl name="TX_AIF2_CAP Mixer DEC3" value="1" />
+        <ctl name="TX DMIC MUX3" value="DMIC2" />
+    </path>
+
     <path name="amic3">
         <ctl name="TX DEC0 MUX" value="SWR_MIC" />
         <ctl name="TX SMIC MUX0" value="SWR_MIC8" />
