@@ -219,6 +219,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapperextensions@1.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.composer-service.rc \
+    vendor.qti.hardware.display.composer-service.xml
+
 # Display NDK
 PRODUCT_PACKAGES += \
     android.hardware.light-V2-ndk.vendor \
