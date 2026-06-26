@@ -3,6 +3,7 @@ allow hal_camera_default camera_persist_file:dir search;
 allow hal_camera_default vendor_persist_sensors_file:dir search;
 dontaudit hal_camera graphics_device:dir search;
 dontaudit hal_camera_default default_prop:file read;
+dontaudit hal_camera_default { aac_drc_prop ab_update_gki_prop }:file { read open getattr map };
 r_dir_file(hal_camera_default, mnt_vendor_file)
 r_dir_file(hal_camera_default, camera_persist_file)
 r_dir_file(hal_camera_default, vendor_persist_sensors_file)
