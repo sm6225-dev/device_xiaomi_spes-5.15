@@ -202,6 +202,8 @@ USE_DEX2OAT_DEBUG := false
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4.vendor \
+    android.hardware.graphics.mapper@2.0 \
+    android.hardware.graphics.mapper@3.0 \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     libdisplayconfig.qti \
     libdisplayconfig.system.qti \
