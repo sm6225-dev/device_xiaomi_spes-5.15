@@ -171,6 +171,7 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor \
     libpiex_shim \
+    libcamxmmaphook \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 

@@ -342,7 +342,7 @@ vendor/lib64/camera/fdconfigpreview.bin|60d9b03eeaf3946d53ee5c94dbb587649cf78755
 vendor/lib64/camera/fdconfigpreviewlite.bin|60d9b03eeaf3946d53ee5c94dbb587649cf78755
 vendor/lib64/camera/fdconfigvideo.bin|60d9b03eeaf3946d53ee5c94dbb587649cf78755
 vendor/lib64/camera/fdconfigvideolite.bin|60d9b03eeaf3946d53ee5c94dbb587649cf78755
-vendor/lib64/hw/camera.qcom.so|a8ff2be0be0f6125419392e11dc4150c6c45c672
+vendor/lib64/hw/camera.qcom.so|4d1f32acd9703c151db2a0ca5506a64e0d938d0f
 vendor/lib64/hw/com.qti.chi.override.so|8b9139207c2837694a23b5f4ceeb8a6394e4146f
 vendor/lib64/libHalSuperSensorServer.so|c5051788ca61c19b79f1cbce2bf0f6c0b2908c6a
 vendor/lib64/libI420colorconvert.so|974e94bee4eb525b5e8fa716ff0b8b6224a8c36e

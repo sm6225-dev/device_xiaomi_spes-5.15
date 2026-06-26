@@ -1,0 +1,6 @@
+cc_library_shared {
+    name: "libcamxmmaphook",
+    srcs: ["mmap_hook.c"],
+    shared_libs: ["liblog", "libdl"],
+    vendor: true,
+}

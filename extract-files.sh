@@ -62,6 +62,10 @@ function blob_fixup() {
             llvm-strip --strip-debug  "${2}"
 			"${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
+        vendor/lib64/hw/camera.qcom.so)
+            llvm-strip --strip-debug  "${2}"
+			"${PATCHELF}" --add-needed "libcamxmmaphook.so" "${2}"
+            ;;
     esac
 }
 
