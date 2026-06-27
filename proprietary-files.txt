@@ -406,7 +406,6 @@ vendor/lib64/libarcsoft_portrait_lighting_c.so|ca42fa6fc25e231ca70e1caf80a08b18c
 vendor/lib64/libarcsoft_supernight.so|c3ba0e1dfb825e414eb9265712d1ae1bfe8730ed
 
 # Camera CamX - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
-vendor/lib64/libcamxexternalformatutils.so|73f187004ec5ed827a0bef6622e126353a5695a7
 vendor/lib64/libcamxfacialfeatures.so|098f7776c9d5cf3f5a4d909fce2dbe9f476b7b7b
 vendor/lib64/libcamxfdalgo.so|90e157a2b0ffc70b37a6d998882e9ffd19e84c5f
 vendor/lib64/libcamxfdengine.so|32cee30f27284284ec1665d480e6882f8f4ff621

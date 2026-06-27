@@ -1,0 +1,13 @@
+cc_library_shared {
+    name: "libcamxexternalformatutils",
+    srcs: ["camxshim.cpp"],
+    vendor: true,
+    shared_libs: [
+        "liblog",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wno-unused-parameter",
+    ],
+}
