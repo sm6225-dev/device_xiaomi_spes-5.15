@@ -334,7 +334,6 @@ PRODUCT_PACKAGES += \
     fstab.zram \
     fstab.qcom.vendor_ramdisk \
     init.qcom.rc \
-    init.qcom.usb.rc \
     init.qti.kernel.rc \
     init.recovery.qcom.rc \
     init.target.rc \
@@ -352,7 +351,6 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
     init.qti.dcvs.sh \
     init.qti.early_init.sh \
     init.qti.kernel.sh \
@@ -567,7 +565,13 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
+    android.hardware.usb@1.3-service-qti \
+    android.hardware.usb.gadget@1.2-service-qti
+
+PRODUCT_PACKAGES += \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    usb_compositions.conf
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
