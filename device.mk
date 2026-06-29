@@ -237,6 +237,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service.rc \
     vendor.qti.hardware.display.composer-service.xml
 
+PRODUCT_PACKAGES += \
+    init.qti.display_boot.rc \
+    init.qti.display_boot.sh
+
 # Display NDK
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-V1-ndk.vendor \
