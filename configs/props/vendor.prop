@@ -251,6 +251,8 @@ ro.hardware.keystore_desede=true
 ro.control_privapp_permissions=enforce
 
 # Media
+ro.media.xml_variant.codecs=_khaje_v0
+ro.media.xml_variant.codecs_performance=_khaje_v0
 vendor.mm.enable.qcom_parser=16711663
 persist.mm.enable.prefetch=true
 vendor.media.omx=0
