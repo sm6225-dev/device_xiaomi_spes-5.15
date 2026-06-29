@@ -1166,10 +1166,7 @@ vendor/firmware/ipa_fws.elf|0c499b87dc2af692c1ea419ef7f3a2c7cfaa249c
 vendor/firmware/ipa_fws.mdt|6a87dc926c07fbc900b1d85fa3c4c1f755f2ebf4
 
 # IR
-vendor/bin/hw/android.hardware.ir-service.example
 vendor/bin/consumerird
-vendor/etc/init/android.hardware.ir-service.example.rc
-vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml
 vendor/lib64/hw/consumerir.qcom.so
 
 # Keymint
