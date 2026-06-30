@@ -2,7 +2,9 @@ allow init debugfs_tracing_debug:dir mounton;
 allow init proc:file { setattr };
 allow init hal_fingerprint_default:process ptrace;
 
+allow init sysfs:file setattr;
+dontaudit init sysfs:file write;
+
 # last_kmsg
 allow init proc_last_kmsg:file r_file_perms;
 allow init proc_last_kmsg:file setattr;
-

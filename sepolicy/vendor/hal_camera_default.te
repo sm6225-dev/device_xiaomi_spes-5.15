@@ -7,5 +7,6 @@ dontaudit hal_camera_default { aac_drc_prop ab_update_gki_prop }:file { read ope
 r_dir_file(hal_camera_default, mnt_vendor_file)
 r_dir_file(hal_camera_default, camera_persist_file)
 r_dir_file(hal_camera_default, vendor_persist_sensors_file)
+allow hal_camera_default proc_stat:file r_file_perms;
 
 set_prop(hal_camera_default, vendor_camera_sensor_prop)
