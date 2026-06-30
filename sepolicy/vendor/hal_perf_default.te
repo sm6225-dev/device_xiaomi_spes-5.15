@@ -35,3 +35,6 @@ allow vendor_hal_perf_default vendor_hal_displayfeature_xiaomi_default:file read
 
 # WLC
 set_prop(vendor_hal_perf_default, vendor_wlc_public_prop)
+
+# Silence log spam from perf HAL
+dontaudit vendor_hal_perf_default ksu:dir search;
