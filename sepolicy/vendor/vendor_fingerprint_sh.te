@@ -1,0 +1,18 @@
+# Fingerprint init script domain
+type vendor_fingerprint_sh, domain;
+type vendor_fingerprint_sh_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_fingerprint_sh)
+
+# Script reads properties via getprop
+get_prop(vendor_fingerprint_sh, default_prop)
+
+# Script loads kernel modules via insmod
+allow vendor_fingerprint_sh self:capability sys_module;
+allow vendor_fingerprint_sh vendor_file:file r_file_perms;
+allow vendor_fingerprint_sh vendor_file:dir r_dir_perms;
+allow vendor_fingerprint_sh vendor_file:system module_load;
+
+# Execute shell commands
+allow vendor_fingerprint_sh vendor_shell_exec:file rx_file_perms;
+allow vendor_fingerprint_sh vendor_toolbox_exec:file rx_file_perms;

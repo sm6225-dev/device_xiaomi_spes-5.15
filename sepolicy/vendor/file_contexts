@@ -33,6 +33,9 @@
 # Fingerprint HAL
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service.xiaomi                                   u:object_r:hal_fingerprint_default_exec:s0
 
+# Fingerprint init script
+/vendor/bin/init\.fingerprint\.sh                                                                               u:object_r:vendor_fingerprint_sh_exec:s0
+
 # Fix Goodix events
 /vendor/bin/init.goodix.events.sh                                                                               u:object_r:vendor_goodix_events_exec:s0
 
