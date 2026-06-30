@@ -148,7 +148,8 @@ TARGET_KERNEL_EXT_MODULES := \
         qcom/opensource/touch-drivers \
         qcom/opensource/video-driver \
         qcom/opensource/wlan/platform \
-        qcom/opensource/wlan/qcacld-3.0
+        qcom/opensource/wlan/qcacld-3.0 \
+        st/opensource/driver
 
 BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/configs/modules/modules.load.recovery))
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/modules/modules.load.vendor_dlkm))

@@ -153,7 +153,7 @@ stm_p_basic.ko
 stm_p_ost.ko
 stm_console.ko
 stm_ftrace.ko
-st21nfc.ko
+stm_nfc_i2c.ko
 snd-usb-audio-qmi.ko
 cfg80211.ko
 qrtr-smd.ko
