@@ -167,7 +167,6 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor \
-    libstdc++.vendor \
     libpiex_shim \
     libcamxmmaphook \
     libcamxexternalformatutils \
