@@ -488,23 +488,23 @@ vendor/etc/camera/125_Latin.png|eac04636de0aeac2480a3be9d1f0e04f58ddfd0b
 vendor/etc/camera/126_Fantasy2.png|8b94fd32b66b3e88129618612f2603b9bdc0b3c9
 vendor/etc/camera/127_Creamy.png|71d1a5bc75edad2eb29ef58b1e41a18c55e5f609
 vendor/etc/camera/128_Sepia.png|ac5cf27142b07425c0775e8939ae2d99524ed622
-vendor/etc/camera/camxoverridesettings.txt|54e57d7d260c02c0b1d6f626a4107173795c74c2
+vendor/etc/camera/camxoverridesettings.txt|4cc892618edf673958e638f7bd2b9308e8f173ad
 vendor/etc/camera/com.xiaomi.dcal.wd.golden|04cd342bffd4460d268c6ade33e6e1baccc092b8
 vendor/etc/camera/com.xiaomi.dcal.wd.golden_2|f674cf131b578ba4c6020c25d7d28342ebf1d389
 vendor/etc/camera/com.xiaomi.dcal.wd.golden_3|4ae0125856c584b9c39f7c2770c8d9a2bec20e60
 vendor/etc/camera/dof_mecp.bin|47857aaeaac0c32c3c8bd200d67efe8e1855179d
-vendor/etc/camera/hdrcheckerparamsettings.yml|ea6ff9bb057e86b277aea4eb502b1feabdcbeb3d
+vendor/etc/camera/hdrcheckerparamsettings.yml|d831d84390b66da676f2b8f823acf5e5f38b734f
 vendor/etc/camera/intsense_config_undistort.bin|3d1941ed841ad5c30ebe906f989437b239022935
 vendor/etc/camera/mibokeh_712_opencl.bin|7263568c30a8afa484f42bf5da2d5f55f0ef8f10
 vendor/etc/camera/mibokeh_712_parameter.bin|c4b98942d45e15be0d738b708df1f83151bad227
-vendor/etc/camera/morpho_lowlight_2.0_aac_gc02m1_macro_global.xml|4b7fecbd02a67bc2f8afc55bad31c9b12bcb7c7a
-vendor/etc/camera/morpho_lowlight_2.0_aac_gc02m1_macro_india.xml|88d7f428a540c3a863705ce53736d9fff35d8030
-vendor/etc/camera/morpho_lowlight_2.0_aac_gc08a3_ultra_global.xml|081cb5d94ab062c4d4d81f951544c6181eb10b7a
-vendor/etc/camera/morpho_lowlight_2.0_aac_gc08a3_ultra_india.xml|66c4ed1db32ba7937bf57f9b61b429a0ea3fbfca
-vendor/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_global.xml|fff3260559e10273f110f37a74258c0c6314095c
-vendor/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_india.xml|ea3fcf259e3b67d00e0715b2526d462b65bb4429
-vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_global.xml|87bd6065bda2b6d88511e9c43d348155d08ccc72
-vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india.xml|76e250c073b30c99efb065004b1e46a447195609
+vendor/etc/camera/morpho_lowlight_2.0_aac_gc02m1_macro_global.xml|9bdd2b41d596bdab0745d6b88c10577e21f336f5
+vendor/etc/camera/morpho_lowlight_2.0_aac_gc02m1_macro_india.xml|8d6d045f6fc5de3b5ae4f5202d18cf6cd0c03e01
+vendor/etc/camera/morpho_lowlight_2.0_aac_gc08a3_ultra_global.xml|9d81421e4b9733b980efa592b48c5f96bc19829e
+vendor/etc/camera/morpho_lowlight_2.0_aac_gc08a3_ultra_india.xml|2fdbfaf3d8fdce350c359079c4cb964886d6f7be
+vendor/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_global.xml|4f8d3db5bf82506d4279357a7a2453175b2fb7ec
+vendor/etc/camera/morpho_lowlight_2.0_aac_s5k3l6_front_india.xml|6ab3afc5742a280fd8e646e379aab46ef1685a05
+vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_global.xml|4a4dabd03eb4d7c5adac30318a6f1bdb1a8b697c
+vendor/etc/camera/morpho_lowlight_2.0_ofilm_s5kjn1_wide_india.xml|cdc1ac72ab25a8a8beac9fec6c9b1cf3d45b077b
 vendor/etc/camera/vidhance_calibration|a7b903097b3fa6712e841b9be27a8ffe3aa0e2fb
 
 # Camera Feature - miui_SPESNGlobal_OS1.0.11.0.TGKMIXM_f5baa0b92b_13.0
@@ -669,11 +669,11 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 
 # Display Calibration from miui_SPESNGlobal_V14.0.6.0.TGKMIXM
 vendor/bin/qdcmss|536c34abfbf7833df440bfcd264bacdc88318067
-vendor/etc/display/advanced_sf_offsets.xml|d0265dc3df8680569dc9e640f48729e08279693b
-vendor/etc/init/qdcmss.rc|7e41bd112a47086ea5dd4f36e58e8c9946f6b8fd
-vendor/etc/SVIConfig.xml|b8512a6ece716e135e13a18ad7baf1601c012625
-vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_display_mi.xml|099d9192a50729c6dbb40a88503421ff46aa143b
-vendor/etc/dsi_panel_k7_38_0c_0b_fhdp_video_display_mi.xml|099d9192a50729c6dbb40a88503421ff46aa143b
+vendor/etc/display/advanced_sf_offsets.xml|de6449ddd7fd4e975ae29ce5aeeda1d6dff275ee
+vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
+vendor/etc/SVIConfig.xml|059de71051994f1b24285c5a3b80c79260b4e3a3
+vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_display_mi.xml|c8f211554503422183f800226229de79e5c06b6c
+vendor/etc/dsi_panel_k7_38_0c_0b_fhdp_video_display_mi.xml|c8f211554503422183f800226229de79e5c06b6c
 vendor/etc/qdcm_calib_data_k7_38_0c_0a_video_mode_fhdp_dsi_panel.xml|10dfa3b53509b3cb3914ac2918c7e88ed9ffe3a9
 vendor/etc/qdcm_calib_data_k7_38_0c_0b_video_mode_fhdp_dsi_panel.xml|677828921f23d29e1607680d4d347c8674ff4f77
 
@@ -1153,7 +1153,7 @@ vendor/lib64/vendor.qti.latency@2.1.so
 vendor/lib64/vendor.qti.latency@2.2.so
 
 # IPA firmware from miui_SPESNGlobal_V14.0.6.0.TGKMIXM
-vendor/etc/init/ipa_fws.rc|9f2307456439ecba67c6d72b414f6b130900c672
+vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
 vendor/firmware/ipa_fws.b00|3e53d4ec79753057bd09d6a4c1102ef7c079e864
 vendor/firmware/ipa_fws.b01|12d45511688ea2540c0a645eda7c4cacc584e641
 vendor/firmware/ipa_fws.b02|0bd1358c76027738af30277f8f53439730c3a87f
@@ -1399,7 +1399,7 @@ vendor/firmware_mnt/image/modem.b28|4a10f21592c48d81184e160836d8bd3b046bd8d1
 vendor/firmware_mnt/image/modem.b29|c941f1b0d8adebb689f76105a72bfb29e97c75c1
 vendor/firmware_mnt/image/modem.mdt|a79df8e7186477c1920c4d2bff4029750f745acf
 vendor/firmware_mnt/image/modemr.jsn|bf8df095c5013fccd25eaab3133968d0ad059005
-vendor/firmware_mnt/image/modemuw.jsn|87d5a4c0e4c85a31c9c88a19be219939c23f4793
+vendor/firmware_mnt/image/modemuw.jsn|6cb0c85cba1162a548f7dfeaa1adf73480a99a4f
 vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/cmcc_sub/sr_dsds/mcfg_hw.mbn|0c9a2d8b474175ad533f398b8b8fd2c95a13c5ac
 vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/7+7_mode/sr_dsds/mcfg_hw.mbn|6f9d3086e38b386e2038afa0d3bdd4dce71b5072
 vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/divar/la/ss/mcfg_hw.mbn|72098f13392a31f7d0b28f07ba8153b525d87d70
@@ -1721,8 +1721,8 @@ vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/generic/test/nk_iot/mcfg
 vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.dig|e7f6266567b662f2105224f5470880ef16a1a14c
 vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/mbn_sw.txt|9c10636617238e655707be032bb4d23aba061996
 vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_all.txt|2c29a8fb0b81e41a2ff60d2fdbc9cf6e5315c6b6
-vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_eea.txt|d5e0ebb9ea4c52649bfde95fcf6d99c1c1ba4d2d
-vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt|818be39df083ebe13a8701ded867b97d517c4c47
+vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_eea.txt|ca39907b9ade5b90ab25ccea597bb2c8560d1913
+vendor/firmware_mnt/image/modem_pr/mcfg/configs/mcfg_sw/oem_sw.txt|0e09b6cc34d305eb01b565091bcf7a7a9a16655d
 vendor/firmware_mnt/image/featenab.b00|672534e92442e36eeb0b732cdb5b75950565828e
 vendor/firmware_mnt/image/featenab.b01|894a9106dba62d3ffc47eacfae6008db157920b3
 vendor/firmware_mnt/image/featenab.b02|0d980754f0cf90552cd5ff8c80a28ab87450a9a3
@@ -2292,7 +2292,7 @@ vendor/etc/sensors/sns_reg_config|2d98ddce430f5ee9b8804399f14cde2b234125a7
 vendor/etc/sensor_diag.cfg|ad39511c15df2a2279ddbb4f056071704b9ec891
 
 # Sensors elliptic from miui_SPESNGlobal_V14.0.6.0.TGKMIXM
-vendor/etc/elliptic_sensor.xml|94d6e687fe902039d47b6d8557a233a33a7bd029
+vendor/etc/elliptic_sensor.xml|2a38626bb26d9def04d2a34167440c2ee1a41bc1
 vendor/lib64/hw/sensors.elliptic@2.0.so|c19dfafbb3fb4ae8372c8b57fb02d08af5f98c50
 vendor/lib64/libnotifyaudiohal.so|dacd0783b6b06c2ccb60510bf62d8cb16e42dcdd
 
