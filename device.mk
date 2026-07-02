@@ -83,6 +83,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudiopreprocessing \
+    libaudioroute.vendor \
+    libprocessgroup.vendor \
     libbundlewrapper \
     libdownmix \
     libdynproc \
@@ -171,6 +173,8 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libpiex_shim \
+    libpng.vendor \
+    libutilscallstack.vendor \
     libcamxmmaphook \
     libcamxexternalformatutils \
     vendor.qti.hardware.camera.device@1.0.vendor \
@@ -501,7 +505,10 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor \
     libjson \
+    libjsoncpp.vendor \
+    libsqlite.vendor \
     libqti_vndfwk_detect.vendor \
     libqti_vndfwk_detect_vendor \
     libvndfwk_detect_jni.qti.vendor
