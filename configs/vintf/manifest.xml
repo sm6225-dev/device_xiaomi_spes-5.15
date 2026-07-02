@@ -81,7 +81,6 @@
         <fqname>@2.0::IMapper/default</fqname>
         <fqname>@2.1::IMapper/default</fqname>
         <fqname>@3.0::IMapper/default</fqname>
-        <fqname>@4.0::IMapper/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.fingerprints.extension</name>
