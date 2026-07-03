@@ -86,6 +86,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${SIGSCAN}" -p "FF 03 01 D1 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9" -P "C0 03 5F D6 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9" -f "${2}"
             ;;
+        odm/lib64/libmt@1.3.so | odm/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so)
+            [ "$2" = "" ] && return 0
+            python3 -c "import os; p = '${2}'; data = open(p, 'rb').read(); data = data.replace(b'_ZN15keymasterdevice21KeymasterKeyProvision28SetProvisioningKeyboxSuccessEv', b'_ZN15keymasterdevice21KeymasterKeyProvision24SetProvisioniningSuccessEv\x00\x00\x00\x00'); open(p, 'wb').write(data)"
+            ;;
         *)
             return 1
             ;;
