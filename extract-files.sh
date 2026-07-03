@@ -82,6 +82,10 @@ function blob_fixup() {
             llvm-strip --strip-debug  "${2}"
 			"${PATCHELF}" --add-needed "libcamxmmaphook.so" "${2}"
             ;;
+        vendor/bin/hw/vendor.qti.hardware.display.composer-service)
+            [ "$2" = "" ] && return 0
+            "${SIGSCAN}" -p "FF 03 01 D1 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9" -P "C0 03 5F D6 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9" -f "${2}"
+            ;;
         *)
             return 1
             ;;
