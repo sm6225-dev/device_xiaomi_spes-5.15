@@ -1118,9 +1118,6 @@ vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/libvideotxr.so
 
-# Memory
-vendor/lib64/libvmmem.so
-
 # Micharge
 vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
 vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
