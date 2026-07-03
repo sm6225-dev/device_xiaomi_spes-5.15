@@ -122,7 +122,7 @@
     },
     {
       "Name": "CPUBWHystTriggerCount",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count",
+      "Path": "/sys/devices/system/cpu/bus_dcvs/DDR/1b8e300.qcom,bwmon-ddr/hyst_trigger_count",
       "Values": [
         "0",
         "3"
@@ -131,7 +131,7 @@
     },
     {
       "Name": "CPUBWHistMemory",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hist_memory",
+      "Path": "/sys/devices/system/cpu/bus_dcvs/DDR/1b8e300.qcom,bwmon-ddr/hist_memory",
       "Values": [
         "0",
         "20"
@@ -140,7 +140,7 @@
     },
     {
       "Name": "CPUBWHystLength",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_length",
+      "Path": "/sys/devices/system/cpu/bus_dcvs/DDR/1b8e300.qcom,bwmon-ddr/hyst_length",
       "Values": [
         "0",
         "10"
@@ -149,7 +149,7 @@
     },
     {
       "Name": "CPUBWSampleMs",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/sample_ms",
+      "Path": "/sys/devices/system/cpu/bus_dcvs/DDR/1b8e300.qcom,bwmon-ddr/sample_ms",
       "Values": [
         "10",
         "4"
@@ -158,23 +158,10 @@
     },
     {
       "Name": "CPUBWIOPercent",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/io_percent",
+      "Path": "/sys/devices/system/cpu/bus_dcvs/DDR/1b8e300.qcom,bwmon-ddr/io_percent",
       "Values": [
         "80",
         "34"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUBWMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/min_freq",
-      "Values": [
-        "15960",
-        "11863",
-        "7759",
-        "5859",
-        "4173",
-        "1525"
       ],
       "ResetOnInit": true
     },
@@ -218,7 +205,7 @@
     },
     {
       "Name": "DDRLittleClusterMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-ddr-lat/min_freq",
+      "Path": "/sys/devices/system/cpu/bus_dcvs/DDR/soc:qcom,memlat:ddr:silver/min_freq",
       "Values": [
         "15960",
         "11863",
@@ -230,7 +217,7 @@
     },
     {
       "Name": "DDRBigClusterMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu4-cpu-ddr-lat/min_freq",
+      "Path": "/sys/devices/system/cpu/bus_dcvs/DDR/soc:qcom,memlat:ddr:gold/min_freq",
       "Values": [
         "15960",
         "11863",
@@ -328,12 +315,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "CPUBWMinFreq",
-      "Duration": 0,
-      "Value": "7759"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "UfsClkGateEnable",
       "Duration": 200,
       "Value": "0"
@@ -391,12 +372,6 @@
       "Node": "CPUBWHistMemory",
       "Duration": 5000,
       "Value": "0"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBWMinFreq",
-      "Duration": 5000,
-      "Value": "15960"
     },
     {
       "PowerHint": "LAUNCH",
