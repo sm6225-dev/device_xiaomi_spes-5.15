@@ -118,6 +118,10 @@
             <name>IFingerprintSensorTest</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>IFpcFingerprintAuthenticator</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>com.qualcomm.qti.bluetooth_audio</name>
