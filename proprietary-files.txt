@@ -770,7 +770,7 @@ vendor/lib64/libnative-api.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
+vendor/lib64/librpmb.so|0f099af852fce1bf7d653b956a73bea915e8d806
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libspl.so
 vendor/lib64/libssd.so
