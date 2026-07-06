@@ -69,9 +69,12 @@ PRODUCT_PACKAGES += \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
-    libagmmixer \
+    libagmclient \
+    libaudiopreprocessing \
     libbatterylistener \
+    libfmpal \
     libhfp_pal \
+    libpalclient \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -79,18 +82,6 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libvolumelistener \
     sound_trigger.primary.bengal
-
-PRODUCT_PACKAGES += \
-    libaudiopreprocessing \
-    libaudioroute.vendor \
-    libprocessgroup.vendor \
-    libbundlewrapper \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libldnhncr \
-    libreverbwrapper \
-    libvisualizer
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm6225/audio/primary-hal
 
@@ -255,8 +246,7 @@ PRODUCT_COPY_FILES += \
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml \
-    IPACM_Filter_cfg.xml
+    IPACM_cfg.xml
 
 # IR
 PRODUCT_PACKAGES += \
