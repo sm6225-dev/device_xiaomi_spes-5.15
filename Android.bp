@@ -27,3 +27,10 @@ install_symlink {
     installed_location: "firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini",
     symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }
+
+install_symlink {
+    name: "firmware_mnt_image_symlink",
+    vendor: true,
+    installed_location: "firmware_mnt/image",
+    symlink_target: "/vendor/firmware",
+}
