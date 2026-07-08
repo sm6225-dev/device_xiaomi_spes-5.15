@@ -319,6 +319,10 @@ PRODUCT_COPY_FILES += \
 
 TARGET_SUPPORTS_OMX_SERVICE := false
 
+# Memtrack
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.memtrack-service
+
 # Mountpoints
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
