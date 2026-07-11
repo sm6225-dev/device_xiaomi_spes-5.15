@@ -92,7 +92,10 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/fingerprint.goodix.default.so': blob_fixup()
         .patchelf_version('0_17_2')
         .fix_soname(),
-    'vendor/bin/STFlashTool': blob_fixup()
+    (
+    'vendor/bin/STFlashTool',
+    'vendor/lib64/libstfactory-vendor.so',
+    ): blob_fixup()
         .add_needed('libbase_shim.so'),
     ('vendor/etc/libnfc-nci.conf' ,'vendor/etc/libnfc-hal-st.conf'): blob_fixup()
        .regex_replace('/data/nfc', '/data/vendor/nfc'),
