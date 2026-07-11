@@ -87,6 +87,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('vendor.xiaomi.hardware.displayfeature@1.0.so', 'libvendor.xiaomi.hardware.displayfeature@1.0.so'),
     'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
         .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
+    'vendor/lib64/hw/fingerprint.goodix.default.so': blob_fixup()
+        .patchelf_version('0_17_2')
+        .fix_soname(),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

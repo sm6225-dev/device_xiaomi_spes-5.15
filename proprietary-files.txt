@@ -302,7 +302,7 @@ vendor/lib64/libalCFR.so|f43298c36502fbd6fdc42ae79f345197eaf87b2d
 vendor/lib64/libanc_dc_base.so|69c780ed20404f731fa9ec988d66310205e37560
 vendor/lib64/libbitmlengine.so|e13bbe2c68eaf959b8e51b1dbb7328e3dae4a58d
 vendor/lib64/libc++_shared.so|8bd494c3b1da5d250e0dc81231ea094fd0bccf88
-vendor/lib64/libc++_shared_vf.so|4d2d2761ec5fda2dfc0b5f730b62958860ff8c05
+vendor/lib64/libc++_shared_vf.so;FIX_SONAME|e79dcc923c1c48a8bd7385f7d77254b3d80908ce
 vendor/lib64/libcamera_nn_stub.so|021d78556ca65492713b58fe67b4f6e3bc041776
 vendor/lib64/libcamera_scene.so|4faf256d31e7daa986707179a622b97eed19c81a
 vendor/lib64/libcamerapostproc.so|6b37a3dd5df05abd2e3ff2461f4aaf84a3e28fec
@@ -808,7 +808,7 @@ vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/libdmabufheapfpc.so
+vendor/lib64/libdmabufheapfpc.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
@@ -2067,7 +2067,7 @@ vendor/etc/sensor_diag.cfg|ad39511c15df2a2279ddbb4f056071704b9ec891
 # Sensors elliptic from miui_SPESNGlobal_V14.0.6.0.TGKMIXM
 vendor/etc/elliptic_sensor.xml|2a38626bb26d9def04d2a34167440c2ee1a41bc1
 vendor/lib64/hw/sensors.elliptic@2.0.so|c19dfafbb3fb4ae8372c8b57fb02d08af5f98c50
-vendor/lib64/libnotifyaudiohal.so|dacd0783b6b06c2ccb60510bf62d8cb16e42dcdd
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME|2c336d7782585e899374fc6948bf49bda8575044
 
 # Servicetracker
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
