@@ -53,8 +53,6 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.qccvndhal_aidl-V1-ndk',
     ): lib_fixup_vendor_suffix,
     (
-        'libagmclient',
-        'libpalclient',
     ): lib_fixup_remove,
 }
 
