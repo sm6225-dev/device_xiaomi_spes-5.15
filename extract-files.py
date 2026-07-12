@@ -75,8 +75,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/camera.qcom.so': blob_fixup()
         .strip_debug_sections()
         .add_needed('libcamxmmaphook.so'),
-    'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
-        .sig_replace('FF 03 01 D1 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9', 'C0 03 5F D6 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
     'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
