@@ -76,17 +76,9 @@ blob_fixups: blob_fixups_user_type = {
         .strip_debug_sections()
         .add_needed('libcamxmmaphook.so'),
     'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
-        .sig_replace('FF 03 01 D1 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9', 'C0 03 5F D6 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9')
-        .replace_needed('vendor.xiaomi.hardware.displayfeature@1.0.so', 'libvendor.xiaomi.hardware.displayfeature@1.0.so'),
+        .sig_replace('FF 03 01 D1 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9', 'C0 03 5F D6 FD 7B 01 A9 FD 43 00 91 F5 13 00 F9'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
-    (
-        'vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service',
-        'vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so',
-        'vendor/lib64/libdisplayfeatureservice.so',
-        'vendor/lib64/libsdmcore.so',
-    ): blob_fixup()
-        .replace_needed('vendor.xiaomi.hardware.displayfeature@1.0.so', 'libvendor.xiaomi.hardware.displayfeature@1.0.so'),
     'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
         .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
     'vendor/lib64/hw/fingerprint.goodix.default.so': blob_fixup()
