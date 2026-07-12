@@ -264,7 +264,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/vintf/manifest.xml \
-    $(DEVICE_PATH)/configs/vintf/network_manifest.xml
+    $(DEVICE_PATH)/configs/vintf/network_manifest.xml \
+    hardware/qcom-caf/sm6225/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
+    hardware/qcom-caf/sm6225/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += k7tn
 ODM_MANIFEST_K7TN_FILES := $(DEVICE_PATH)/configs/vintf/manifest_k7tn.xml
