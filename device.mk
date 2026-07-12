@@ -56,7 +56,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
-    audio.primary.bengal \
+    audio.primary.default \
     audio.r_submix.default \
     audio.usb.default
 
