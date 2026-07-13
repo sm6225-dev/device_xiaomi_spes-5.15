@@ -88,6 +88,11 @@ CamxFormatResult CamxFormatUtil_GetPlaneLayoutInfo(
     int y_stride = ALIGN(width, 128); // Standard linear is 128
     int y_scanline = ALIGN(height, 32);
 
+    if (pixelFormat == CAMERA_PIXEL_FORMAT_NV21_ZSL) {
+        y_stride = ALIGN(width, 64);
+        y_scanline = ALIGN(height, 64);
+    }
+
     // Adjust for UBWC formats commonly used in Android 13 Gralloc (UBWC V2/V3)
     if (pixelFormat == CAMERA_PIXEL_FORMAT_YCbCr_420_SP_UBWC ||
         pixelFormat == CAMERA_PIXEL_FORMAT_UBWC_FLEX) {
@@ -103,6 +108,9 @@ CamxFormatResult CamxFormatUtil_GetPlaneLayoutInfo(
         } else if (planeType == CAMERA_PLANE_TYPE_UV) {
             pPlaneInfo->stride = y_stride;
             pPlaneInfo->scanline = ALIGN(height / 2, 16);
+            if (pixelFormat == CAMERA_PIXEL_FORMAT_NV21_ZSL) {
+                pPlaneInfo->scanline = y_scanline / 2;
+            }
             if (pixelFormat == CAMERA_PIXEL_FORMAT_YCbCr_420_SP_UBWC ||
                 pixelFormat == CAMERA_PIXEL_FORMAT_UBWC_FLEX) {
                 pPlaneInfo->scanline = ALIGN(height / 2, 16); // UBWC UV scanline alignment is 16
