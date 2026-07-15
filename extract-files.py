@@ -45,7 +45,6 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.hardware.qccsyshal@1.1',
         'vendor.qti.hardware.qccsyshal@1.2',
         'vendor.qti.hardware.qccvndhal@1.0',
-        'vendor.qti.hardware.wifidisplaysession@1.0',
         'vendor.qti.ImsRtpService-V1-ndk',
         'vendor.qti.imsrtpservice@3.0',
         'vendor.qti.imsrtpservice@3.1',
@@ -54,14 +53,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
-        .add_needed('libgui_shim.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libbinder_shim.so')
-        .add_needed('libinput_shim.so')
-        .remove_needed('android.hidl.base@1.0.so'),
-    'system_ext/lib64/libwfdservice.so': blob_fixup()
-        .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
     'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
         .sig_replace('13 0A 00 94', '1F 20 03 D5'),
     'vendor/lib64/camera/components/com.qti.node.mialgocontrol.so': blob_fixup()
@@ -91,7 +82,6 @@ blob_fixups: blob_fixups_user_type = {
     (
     'vendor/etc/seccomp_policy/atfwd@2.0.policy',
     'vendor/etc/seccomp_policy/qms.policy',
-    'vendor/etc/seccomp_policy/wfdhdcphalservice.policy',
     ): blob_fixup()
         .add_line_if_missing('gettid: 1'),
 
