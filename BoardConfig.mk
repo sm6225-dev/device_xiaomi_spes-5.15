@@ -207,6 +207,8 @@ SOONG_CONFIG_SENSORS_XIAOMI += USES_SINGLE_TAP_SENSOR
 SOONG_CONFIG_SENSORS_XIAOMI_USES_SINGLE_TAP_SENSOR := true
 
 # Sepolicy
+include device/lineage/sepolicy/common/sepolicy.mk
+include device/lineage/sepolicy/qcom/sepolicy.mk
 include device/qcom/sepolicy_vndr/sm6225/SEPolicy.mk
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
