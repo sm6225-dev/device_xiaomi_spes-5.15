@@ -105,7 +105,7 @@ KERNEL_LTO := none
 # Kernel (modules)
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm6225-modules
 TARGET_KERNEL_EXT_MODULES := \
-        qcom/opensource/audio-kernel \
+        qcom/opensource/audio-kernel-apr \
         qcom/opensource/bt-kernel \
         qcom/opensource/camera-kernel \
         qcom/opensource/dataipa/drivers/platform/msm \
