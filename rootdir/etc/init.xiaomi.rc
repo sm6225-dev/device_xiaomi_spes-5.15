@@ -6,6 +6,9 @@ on init
     chmod 0644 /dev/goodix_fp
 
 on post-fs-data
+    mount none /vendor/firmware/bdm7eu.bin /vendor/firmware_mnt/image/bdm7eu.bin bind
+    mount none /vendor/firmware/bdm7euu.bin /vendor/firmware_mnt/image/bdm7euu.bin bind
+
     mkdir /data/vendor/fpc 0777 system system
     mkdir /data/vendor/goodix 0777 system system
     mkdir /data/vendor/fpdump 0770 system system

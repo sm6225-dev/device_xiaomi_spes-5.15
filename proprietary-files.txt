@@ -1462,5 +1462,9 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 # Vulkan
 vendor/lib64/hw/vulkan.adreno.so
 
+# Wlan Firmware from topaz
+vendor/firmware/bdm7eu.bin|f1933190ff62a54cc4955a84abe659de87fa5ccc
+vendor/firmware/bdm7euu.bin|5a1d9da8e6d2ca45658b1d90b763300648057351
+
 # Wi-Fi
 vendor/bin/cnss-daemon
