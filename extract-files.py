@@ -67,6 +67,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libhidlbase_shim.so'),
     'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
         .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
+    'vendor/lib64/libgf_ca.so': blob_fixup()
+        .binary_regex_replace(
+            b'/vendor/firmware_mnt/image',
+            b'/vendor/firmware\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00',
+        ),
     'vendor/lib64/hw/fingerprint.goodix.default.so': blob_fixup()
         .patchelf_version('0_17_2')
         .fix_soname(),
