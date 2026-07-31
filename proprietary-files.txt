@@ -3,28 +3,37 @@
 
 # ADSP
 vendor/bin/adsprpcd
+vendor/bin/dspservice
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# ADSP Module
-vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
-vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so
-vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
-vendor/lib/rfsa/adsp/libbitml_nsp_skel.so
-vendor/lib/rfsa/adsp/libcalculator_skel.so
-vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libmctfengine_skel.so
-vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
-vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/misound_res_headphone.bin
-vendor/lib/rfsa/adsp/misound_res_spk.bin
+# ADSP Modules Pinned from miui_SPESNGlobal_OS1.0.11.0.TGKMIXM
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|7182a5728055dfdee15cd9518c1fdd576d813133
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so|67e36bfe46b82bc3e0603bf58d638293fcadd4aa
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
+vendor/lib/rfsa/adsp/libadsp_jpege_skel.so|32c2b255f8b15848cd40739b9c455e86a1adb1e8
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|738014e904331e99749f36c8f6c0c43b8c246fe6
+vendor/lib/rfsa/adsp/libbitml_nsp_skel.so|9bb23f8b7fa5f06319a1e62195d85a8dd4029c85
+vendor/lib/rfsa/adsp/libcamera_nn_skel.so|e4a35174a93264b38fe210a3f99e5fb7be8dc39e
+vendor/lib/rfsa/adsp/libdspCV_skel.so|7d210350a0cede8ea77a996d02f7b6fc3eac65bb
+vendor/lib/rfsa/adsp/libdsp_streamer_binning.so|00eb6acc7c864371b932f95ff98e98351c6508d8
+vendor/lib/rfsa/adsp/libfastcvadsp.so|14d8c1b9a0e25f311fcc8e9e496b2067008189f2
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|30bcb196392a833ed39c2959bfad42e622dd923d
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|baf2152894bf05c0c14581e3def9b4d1abf9e6d1
+vendor/lib/rfsa/adsp/libmctfengine_skel.so|f5180637e979765c045be9e39f71b12a7a6ae2b9
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d95fa1d4e6a7f60a43465256963636cb14d8a267
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|1c0e34848c812529d9f301447202a1b171a6adb5
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+vendor/lib/rfsa/adsp/misound_karaoke_res.bin|f469c715de041478ccb8f63ddfc20db9e12d844b
+vendor/lib/rfsa/adsp/misound_karaokemix_res.bin|1b6114eeefa29e36f10571ae5dde4ba84625982c
+vendor/lib/rfsa/adsp/misound_res.bin|2032afe6449073799493b54db7c73c6a34c65a87
+vendor/lib/rfsa/adsp/misound_res_headphone.bin|634f612f496d8c59fbe75c37091468856c39febb
+vendor/lib/rfsa/adsp/misound_res_spk.bin|543bd5d9d2b00bf6aa3319895c0a366f40763275
 
 # ACDB Pinned from miui_SPESNGlobal_V14.0.6.0.TGKMIXM
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb|0cc92d7ce081e30ccaa203b3591f592d7ca36a6d
@@ -72,20 +81,13 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # ANT
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libadm.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libcapiv2svacnnvendor.so
-vendor/lib64/libcapiv2svarnnvendor.so
-vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libmcs.so
-vendor/lib64/libqtigefar.so
-
-# Audio Configs
-vendor/etc/audio_diag.cfg
+# Audio Pinned from miui_SPESNGlobal_OS1.0.11.0.TGKMIXM
+vendor/lib64/libacdb-fts.so|8e605420de365e424f45fef43f69aaecf0c62334
+vendor/lib64/libacdbloader.so|4c096e3aa779e61aa38638174c0b4f036348e9b5
+vendor/lib64/libacdbrtac.so|03922d92aae03a5a868d254b945d6ea60f63dd1d
+vendor/lib64/libadiertac.so|798d53445df7bf21f21ed30b3f043301b58b229d
+vendor/lib64/libaudcal.so|85cdd2064fca209e76da78c388422404895504d1
+vendor/lib64/libqtigef.so|a6b936257c7f0fccf3ec22ad4e26af5e23078259
 
 # Audio SoundFX
 vendor/lib64/soundfx/libasphere.so
@@ -440,6 +442,7 @@ vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
+vendor/lib64/libsysmon_cdsp_skel.so
 
 # Certifications
 vendor/app/CACertService/CACertService.apk
@@ -647,12 +650,6 @@ vendor/lib64/libspl.so
 vendor/lib64/libssd.so
 vendor/lib64/libwvaidl.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-
-# DSP
-vendor/bin/dspservice
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/lib64/libsdsprpc.so
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ESEPower Manager
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
@@ -1290,12 +1287,12 @@ vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/lib64/libsdsprpc.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
-vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.detect.so
