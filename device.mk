@@ -57,6 +57,7 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.bengal
 
 PRODUCT_PACKAGES += \
+    libacdbloader \
     libadm \
     liba2dpoffload \
     libbatterylistener \

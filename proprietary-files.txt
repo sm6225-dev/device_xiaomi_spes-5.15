@@ -83,7 +83,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio Pinned from miui_SPESNGlobal_OS1.0.11.0.TGKMIXM
 vendor/lib64/libacdb-fts.so|8e605420de365e424f45fef43f69aaecf0c62334
-vendor/lib64/libacdbloader.so|4c096e3aa779e61aa38638174c0b4f036348e9b5
 vendor/lib64/libacdbrtac.so|03922d92aae03a5a868d254b945d6ea60f63dd1d
 vendor/lib64/libadiertac.so|798d53445df7bf21f21ed30b3f043301b58b229d
 vendor/lib64/libaudcal.so|85cdd2064fca209e76da78c388422404895504d1
