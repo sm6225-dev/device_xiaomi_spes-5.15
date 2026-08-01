@@ -1,3 +1,6 @@
+# Bluetooth
+persist.ro.ril.oem.btmac       u:object_r:bluetooth_prop:s0
+
 # Camera
 ro.camera.                     u:object_r:exported_default_prop:s0
 
