@@ -89,6 +89,15 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/seccomp_policy/qms.policy',
     ): blob_fixup()
         .add_line_if_missing('gettid: 1'),
+    'vendor/etc/seccomp_policy/qspm.policy': blob_fixup()
+        .regex_replace('mprotect: arg2 in ~PROT_EXEC \\|\\| arg2 in ~PROT_WRITE\n', '')
+        .regex_replace('sigreturn: 1\n', '')
+        .regex_replace('geteuid32: 1\n', '')
+        .regex_replace('getgid32: 1\n', '')
+        .regex_replace('getegid32: 1\n', '')
+        .regex_replace('getgroups32: 1\n', '')
+        .add_line_if_missing('connect: 1')
+        .add_line_if_missing('sendto: 1'),
 
 }  # fmt: skip
 
