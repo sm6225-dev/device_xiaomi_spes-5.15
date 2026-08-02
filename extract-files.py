@@ -98,6 +98,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('getgroups32: 1\n', '')
         .add_line_if_missing('connect: 1')
         .add_line_if_missing('sendto: 1'),
+    'vendor/lib64/libacdbloader.so': blob_fixup()
+        .replace_needed('libion.so', 'libacd.so'),
 
 }  # fmt: skip
 

@@ -1,0 +1,14 @@
+cc_library_shared {
+    name: "libacd",
+    vendor: true,
+    owner: "qti",
+    srcs: [
+        "acd_ion.c",
+    ],
+    shared_libs: [
+        "libcutils",
+        "liblog",
+        "libutils",
+    ],
+    compile_multilib: "64",
+}
