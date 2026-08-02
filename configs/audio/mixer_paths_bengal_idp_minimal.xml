@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Diagnostic 5.15 mixer configuration.
+     Keep only controls confirmed by tinymix on the ported kernel. -->
+<mixer>
+    <ctl name="TTY Mode" value="OFF" />
+    <ctl name="RX_CDC_DMA_RX_0 Channels" value="Two" />
+    <ctl name="RX_CDC_DMA_RX_0 Format" value="S16_LE" />
+    <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
+    <ctl name="TX_CDC_DMA_TX_3 Format" value="S16_LE" />
+    <ctl name="aw87xxx_spk_switch" value="Off" />
+    <ctl name="aw87xxx_rcv_switch" value="Off" />
+
+    <!-- Route AIF1 playback through both RX macro outputs and enable the
+         external receiver and loudspeaker amplifiers. -->
+    <path name="speaker">
+		<ctl name="EAR_RDAC Switch" value="1" />
+		<ctl name="RDAC3_MUX" value="RX1" />
+		<ctl name="RX_EAR Mode" value="ON" />
+		<ctl name="AUX PATH Mode" value="HP_MODE" />
+		<ctl name="AUX_RDAC Switch" value="1" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
+        <ctl name="RX INT2_1 MIX1 INP0" value="RX1" />
+        <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
+        <ctl name="RX_MACRO RX1 MUX" value="AIF1_PB" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="RX_RX2 Digital Volume" value="79" />
+        <ctl name="RX_CDC_DMA_RX_0 Channels" value="Two" />
+        <ctl name="aw87xxx_rcv_switch" value="Music" />
+        <ctl name="aw87xxx_spk_switch" value="Music" />
+    </path>
+    <path name="speaker-and-headphones" />
+    <path name="headphones" />
+    <path name="handset" />
+    <path name="headset" />
+    <path name="media-speaker" />
+    <path name="media-headphones" />
+    <path name="voice-speaker" />
+    <path name="voice-handset" />
+    <path name="voice-headphones" />
+    <path name="voice-headset" />
+    <path name="quad-mic" />
+    <path name="builtin-mic" />
+
+    <!-- Connect the playback front ends to the primary codec RX backend. -->
+    <path name="deep-buffer-playback">
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia1" value="1" />
+    </path>
+    <path name="low-latency-playback">
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia5" value="1" />
+    </path>
+    <path name="compress-offload-playback">
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia4" value="1" />
+    </path>
+    <path name="compress-offload-playback2">
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia7" value="1" />
+    </path>
+</mixer>
