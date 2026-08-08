@@ -90,7 +90,7 @@ CamxFormatResult CamxFormatUtil_GetPlaneLayoutInfo(
 
     if (pixelFormat == CAMERA_PIXEL_FORMAT_NV21_ZSL) {
         y_stride = ALIGN(width, 64);
-        y_scanline = ALIGN(height, 64);
+        y_scanline = height;
     }
 
     // Adjust for UBWC formats commonly used in Android 13 Gralloc (UBWC V2/V3)
