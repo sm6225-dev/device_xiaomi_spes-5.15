@@ -155,7 +155,7 @@
     <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="0" />
     <ctl name="RX_CDC_DMA_RX_1 Format" value="UNPACKED" />
     <ctl name="WSA_CDC_DMA_TX_0 Format" value="UNPACKED" />
-    <ctl name="RX_CDC_DMA_RX_0 Format" value="UNPACKED" />
+    <ctl name="RX_CDC_DMA_RX_0 Format" value="S16_LE" />
     <!-- lct modify begin -->
     <ctl name="USB_AUDIO_RX Channels" value="Two" />
     <ctl name="USB_AUDIO_TX Channels" value="One" />
@@ -2827,7 +2827,8 @@
         <ctl name="RX INT2_1 MIX1 INP0" value="RX1" />
         <ctl name="RX_MACRO RX1 MUX" value="AIF1_PB" />
         <ctl name="RX_CDC_DMA_RX_0 Channels" value="One" />
-        <ctl name="RX_RX2 Digital Volume" value="79" />
+        <ctl name="RX_RX1 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="84" />
     </path>
 
     <path name="speaker">
@@ -2839,7 +2840,8 @@
         <ctl name="AUX PATH Mode" value="HP_MODE" />
         <ctl name="AUX_RDAC Switch" value="1" />
         <ctl name="aw87xxx_spk_switch" value="Music" />
-        <ctl name="RX_RX2 Digital Volume" value="79" />
+        <ctl name="RX_RX1 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="84" />
         <ctl name="RX INT2_1 MIX1 INP0" value="RX1" />
         <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
@@ -2857,7 +2859,8 @@
         <ctl name="AUX PATH Mode" value="HP_MODE" />
         <ctl name="AUX_RDAC Switch" value="1" />
         <ctl name="aw87xxx_spk_switch" value="Fm" />
-        <ctl name="RX_RX2 Digital Volume" value="79" />
+        <ctl name="RX_RX1 Digital Volume" value="84" />
+        <ctl name="RX_RX0 Digital Volume" value="84" />
         <ctl name="RX INT2_1 MIX1 INP0" value="RX1" />
         <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
         <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
