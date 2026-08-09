@@ -58,7 +58,7 @@ CamxFormatResult CamxFormatUtil_GetFlexibleYUVFormats(CamxFlexFormatInfo* pFlexF
     pFlexFormatInfo->strideAlignment[0] = 256;
     pFlexFormatInfo->scanlineAlignment[0] = 256;
 
-    pFlexFormatInfo->pixelFormat[1] = CAMERA_PIXEL_FORMAT_NV21_ZSL;
+    pFlexFormatInfo->pixelFormat[1] = CAMERA_PIXEL_FORMAT_NV12_VENUS;
     pFlexFormatInfo->strideAlignment[1] = 256;
     pFlexFormatInfo->scanlineAlignment[1] = 256;
 
