@@ -123,7 +123,7 @@ TARGET_KERNEL_EXT_MODULES := \
         qcom/opensource/mmrm-driver \
         qcom/opensource/securemsm-kernel \
         qcom/opensource/touch-drivers \
-        qcom/opensource/video-driver \
+        qcom/opensource/video-driver-legacy \
         qcom/opensource/wlan/platform \
         qcom/opensource/wlan/qcacld-3.0 \
         st/opensource/driver
