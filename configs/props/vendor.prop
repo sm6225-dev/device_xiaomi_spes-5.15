@@ -177,6 +177,7 @@ vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
+vendor.display.override_doze_mode=1
 
 # Displayfeature
 ro.vendor.all_modes.colorpick_adjust=true
